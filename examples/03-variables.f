@@ -16,7 +16,7 @@
     here @ 4 + ,    \ compile address past new word's exit call
     ['] exit ,      \ compile exit
     reveal          \ make created word visible
-    0 state !       \ switch back to interpretation state
+    0 state ! ;     \ switch back to interpretation state
 
 \ cells are 2 bytes wide
 : cells ( -- x ) lit [ 2 , ] ;
